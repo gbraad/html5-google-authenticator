@@ -252,6 +252,9 @@
                 updateKeys();
             }
             $('#updatingIn').text(countDown);
+            if (countDown <= 10) {
+                $('#accounts li a').addClass('expiring').fadeTo(100, 1).fadeTo(500, 0.5);
+            }
         };
 
         return {
